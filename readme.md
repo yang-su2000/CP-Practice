@@ -1,4 +1,4 @@
-# Codeforces-practice
+# Competitive-Programming-Practice
 
 - LeetCode target: 2092 / 2200
 - CodeForces target: 1423 / 1600
