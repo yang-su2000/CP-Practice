@@ -1,0 +1,5 @@
+*.exe
+input*
+output*
+.vscode/
+interview/
