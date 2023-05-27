@@ -4,7 +4,4 @@
 # python sample.py < input.txt
 
 if __name__ == '__main__':
-    t = int(input())
-    for _ in range(t):
-        n, a, b = [int(i) for i in input().split()]
-        
+    n, a, b = [int(i) for i in input().split()]
