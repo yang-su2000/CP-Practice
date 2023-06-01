@@ -1,7 +1,7 @@
 # Competitive-Programming-Practice
 
-- LeetCode target: 2092 / 2200
-- CodeForces target: 1423 / 1600
+- LeetCode target: 2075 / 2200
+- CodeForces target: 1486 / 1600
 - AtCoder target: 597 / 1400
 
 ### Notes
@@ -15,6 +15,7 @@
     - math
     - greedy
     - dp
+    - graph
     - etc.
 
 ### Failed
@@ -25,8 +26,8 @@
 
 **1500**
 
-- brute force + "divide and conquer" https://codeforces.com/contest/1379/problem/B
+- brute force + "divide and conquer" https://codeforces.com/problemset/problem/1379/B
 
-### Sub-Failed
+**1800**
 
-- i.e. get the strategy correct (or almost everything correct) but failed due to whatever-brain-dead reason
+- bipartite graph https://codeforces.com/problemset/problem/173/B

@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// g++ sample.cpp
+// ./compile sample.cpp
 // ./a < input
 
 #define ll long long

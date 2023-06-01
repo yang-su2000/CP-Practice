@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+#define ll long long
 #define mt make_tuple // tie(a, b, c, d) = mt(d, c, b, a)
 #define eb emplace_back
 #define rep(i, begin, end) for (__typeof(end) i = (begin) - ((begin) > (end)); i != (end) - ((begin) > (end)); i += 1 - 2 * ((begin) > (end)))
@@ -20,6 +21,20 @@ T sum(T a, Args... args) { return a + sum(args...); }
 // __builtin_ffs: 1 + (index of first 1 from right), __builtin_popcount: (# of 1s)
 // __builtin_clz: (# of 0s from left), __builtin_ctz: # of 0s from right
 
+ll binpow(ll a, ll b, ll m) {
+    ll ret = 1;
+    while (b) {
+        if (b & 1) ret = ret * a % m;
+        a = a * a % m;
+        b >>= 1;
+    }
+    return ret;
+}
+
+ll inv(ll a, ll m) {
+    return binpow(a, m-2, m);
+}
+
 class DataStructures_Fundamentals {
 public:
 	DataStructures_Fundamentals() {}
@@ -36,10 +51,4 @@ public:
 
 int main() {
     MinStack_MaxQueue::stackModify();
-	cout << "[[";
-	for (int i=0; i<1e5; i++) {
-		cout << 1e5-i-2;
-		if (i<1e5-1) cout << ",";
-	}
-	cout << "]]";
 }
