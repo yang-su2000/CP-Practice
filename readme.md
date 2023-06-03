@@ -1,7 +1,7 @@
 # Competitive-Programming-Practice
 
 - LeetCode target: 2075 / 2200
-- CodeForces target: 1486 / 1600
+- CodeForces target: 1479 / 1600
 - AtCoder target: 597 / 1400
 
 ### Notes

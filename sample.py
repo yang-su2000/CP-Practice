@@ -4,7 +4,7 @@
 def foo(n, ls):
     pass
 
-# python sample.py < input.txt
+# python sample.py < input
 
 if __name__ == '__main__':
     t = int(input())
