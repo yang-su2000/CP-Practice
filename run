@@ -5,3 +5,4 @@ g++ -Wall -Wextra -Wconversion -static -DONLINE_JUDGE -Wl,--stack=268435456 -O2 
 
 # C:\\Programs\\gcc11-64-winlibs\\bin\\g++.exe
 # E:\\mingw32\\bin\\g++.exe
+./a < input

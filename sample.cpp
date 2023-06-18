@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// ./compile sample.cpp
-// ./a < input
+// ./run sample.cpp
 
 #define ll long long
 #define pii pair<int, int>
