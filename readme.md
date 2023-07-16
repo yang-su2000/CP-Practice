@@ -23,7 +23,7 @@
 
 ### Favorite
 
-**N/A**
+**1400**
 
 - bit-Trie https://codeforces.com/contest/1847/problem/C
     - maximum xor subarray
@@ -35,7 +35,7 @@
 
 **N/A**
 
-
+- math + number theory https://codeforces.com/contest/1848/problem/C
 
 **1000**
 
