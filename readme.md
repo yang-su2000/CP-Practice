@@ -33,13 +33,13 @@
 
 - if failed because of mis-interpretation of algorithm type, denote as [A]
 
-**N/A**
-
-- constructive algorithm + math (prime) https://codeforces.com/contest/1864/problem/C
-
 **1000**
 
 - math + greedy https://codeforces.com/problemset/problem/1715/B
+
+**1300**
+
+- constructive algorithm + math (prime) https://codeforces.com/contest/1864/problem/C
 
 **1400**
 
@@ -53,6 +53,7 @@
 **1600**
 
 - presum + dp + "maintain" https://codeforces.com/problemset/problem/1677/A
+- graph + greedy https://codeforces.com/problemset/problem/1476/C
 
 **1800**
 
