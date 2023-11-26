@@ -1,7 +1,7 @@
 # Competitive-Programming-Practice
 
-- LeetCode target: 2213 / 2200 [Guardian achieved]
-- CodeForces target: 1537 / 1600 [Blue achieved]
+- LeetCode target: 2358 / 2200 [Guardian achieved]
+- CodeForces target: 1720 / 1600 [Blue achieved]
 - AtCoder target: 718 / 1400
 
 ### Notes
@@ -32,6 +32,11 @@
 ### Failed
 
 - if failed because of mis-interpretation of algorithm type, denote as [A]
+
+**N/A**
+
+- [A] math (number theory, euler's totient) + "maintain" https://codeforces.com/contest/1900/problem/D
+    - [TODO] still not fully understand why `gcd(a, b) = sum(phi(d) for d in both divisor(a) and divisor(b))`
 
 **1000**
 
