@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+#include <ext/pb_ds/assoc_container.hpp>
+using namespace __gnu_pbds;
+template <class T>
+using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
+
 #define ll long long
 #define mt make_tuple // tie(a, b, c, d) = mt(d, c, b, a)
 #define eb emplace_back
