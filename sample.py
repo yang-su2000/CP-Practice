@@ -5,3 +5,4 @@
 
 if __name__ == '__main__':
     n, a, b = [int(i) for i in input().split()]
+    print(n)

@@ -15,14 +15,8 @@ int main() {
             cin >> val;
             sum += val;
         }
-        ll ans = 0;
-        for (ll i=0; i<=sum; i++) {
-            if (i * i == sum) {
-                ans = i;
-                break;
-            } else if (i * i > sum) break;
-        }
-        if (ans) cout << "YES" << endl;
+        ll base = sqrt(sum);
+        if (base * base == sum) cout << "YES" << endl;
         else cout << "NO" << endl;
     }
 }

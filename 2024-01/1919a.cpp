@@ -6,9 +6,12 @@ using namespace std;
 #define ll long long
 
 int main() {
-    int t, n;
+    int t;
+    ll a, b;
     cin >> t;
     while (t--) {
-        cin >> n;
+        cin >> a >> b;
+        if ((a + b) % 2) cout << "Alice" << endl;
+        else cout << "Bob" << endl;
     }
 }
