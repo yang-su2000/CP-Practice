@@ -1,9 +1,9 @@
 # Competitive-Programming-Practice
 
-- LeetCode target: [2200 - 2299 - 2400] (Orange -> Red)
-- CodeForces target: [1600 - 1664 - 1900] (Expert -> Candidate Master)
-- AtCoder target: [600 - 718 - 1200] (Brown -> Green)
-- CodeChef target: [1600 - 1610 - 2000] (Div.2 -> Div.1)
+- [LeetCode](https://leetcode.com/shinever/) target: [2200 - 2299 - 2400] (Orange -> Red)
+- [CodeForces](https://codeforces.com/profile/shinever) target: [1600 - 1664 - 1900] (Expert -> Candidate Master)
+- [AtCoder](https://atcoder.jp/users/shinever) target: [600 - 718 - 1200] (Brown -> Green)
+- [CodeChef](https://www.codechef.com/users/shinever) target: [1600 - 1610 - 2000] (Div.2 -> Div.1)
 
 ### Notes
 
