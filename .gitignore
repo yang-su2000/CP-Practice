@@ -4,3 +4,4 @@ output*
 .vscode/
 interview/
 *.pdf
+tmp.py

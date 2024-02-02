@@ -1,8 +1,9 @@
 # Competitive-Programming-Practice
 
-- LeetCode target: 2358 / 2200 [Guardian achieved]
-- CodeForces target: 1720 / 1600 [Blue achieved]
-- AtCoder target: 718 / 1400
+- LeetCode target: [2200 - 2299 - 2400] (Orange -> Red)
+- CodeForces target: [1600 - 1664 - 1900] (Expert -> Candidate Master)
+- AtCoder target: [600 - 718 - 1200] (Brown -> Green)
+- CodeChef target: [1600 - 1610 - 2000] (Div.2 -> Div.1)
 
 ### Notes
 
@@ -15,7 +16,7 @@
     - etc.
 - (actual) algorithms
     - math (prime, number theory)
-    - greedy
+    - greedy (string, array)
     - tree: binary-index tree (BIT, or Fenwick Tree), segment tree, MST
     - dp: multidim-dp (memo, state-compression), bit-dp, tree-dp, DAG-dp
     - graph
@@ -35,8 +36,7 @@
 
 **N/A**
 
-- [A] math (number theory, euler's totient) + "maintain" https://codeforces.com/contest/1900/problem/D
-    - [TODO] still not fully understand why `gcd(a, b) = sum(phi(d) for d in both divisor(a) and divisor(b))`
+
 
 **1000**
 
@@ -54,6 +54,7 @@
 
 - brute force + "divide and conquer" https://codeforces.com/problemset/problem/1379/B
 - constructive algorithm + "divide and conquer" https://codeforces.com/problemset/problem/1710/A
+- string greedy https://codeforces.com/contest/1925/problem/C
 
 **1600**
 
@@ -65,3 +66,8 @@
 - [A] bipartite graph https://codeforces.com/problemset/problem/173/B
 - greedy + "transfer" https://codeforces.com/problemset/problem/1845/D
 - math (number theory) https://codeforces.com/contest/1848/problem/C
+
+**2000**
+
+- [A] math (number theory, euler's totient) + "maintain" https://codeforces.com/contest/1900/problem/D
+    - [TODO] still not fully understand why `gcd(a, b) = sum(phi(d) for d in both divisor(a) and divisor(b))`
