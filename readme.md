@@ -36,7 +36,7 @@
 
 **N/A**
 
-
+- pigeonhole principle https://codeforces.com/contest/1994/problem/D
 
 **1000**
 

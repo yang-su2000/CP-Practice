@@ -40,6 +40,32 @@ ll inv(ll a, ll m) {
     return binpow(a, m-2, m);
 }
 
+class Union {
+public:
+    vector<int> p, size;
+    Union(int n) {
+        p.resize(n);
+        size.resize(n);
+        iota(p.begin(), p.end(), 0);
+    }
+    int find(int x) {
+        return x == p[x] ? x : p[x] = find(p[x]);
+    }
+    void link(int x, int y) {
+        x = find(x);
+        y = find(y);
+        if (x != y) {
+            if (size[x] < size[y]) {
+                p[x] = y;
+                size[y] += size[x];
+            } else {
+                p[y] = x;
+                size[x] += size[y];
+            }
+        }
+    }
+};
+
 class DataStructures_Fundamentals {
 public:
 	DataStructures_Fundamentals() {}
