@@ -66,20 +66,90 @@ public:
     }
 };
 
-class DataStructures_Fundamentals {
+class SegmentTree {
+private:
+    vector<int> tree;
+    int n;
+
+    void build(const vector<int>& arr, int v, int tl, int tr) {
+        if (tl == tr) {
+            tree[v] = arr[tl];
+        } else {
+            int tm = (tl + tr) / 2;
+            build(arr, v*2, tl, tm);
+            build(arr, v*2+1, tm+1, tr);
+            tree[v] = min(tree[v*2], tree[v*2+1]);
+        }
+    }
+
+    int query(int v, int tl, int tr, int l, int r) {
+        if (l > r) return INT_MAX;
+        if (l == tl && r == tr) return tree[v];
+        int tm = (tl + tr) / 2;
+        return min(query(v*2, tl, tm, l, min(r, tm)),
+                   query(v*2+1, tm+1, tr, max(l, tm+1), r));
+    }
+
+    void update(int v, int tl, int tr, int pos, int new_val) {
+        if (tl == tr) {
+            tree[v] = new_val;
+        } else {
+            int tm = (tl + tr) / 2;
+            if (pos <= tm)
+                update(v*2, tl, tm, pos, new_val);
+            else
+                update(v*2+1, tm+1, tr, pos, new_val);
+            tree[v] = min(tree[v*2], tree[v*2+1]);
+        }
+    }
+
 public:
-	DataStructures_Fundamentals() {}
+    SegmentTree(const vector<int>& arr) {
+        n = arr.size();
+        tree.resize(4 * n);
+        build(arr, 1, 0, n - 1);
+    }
+
+    int query(int l, int r) {
+        return query(1, 0, n - 1, l, r);
+    }
+
+    void update(int pos, int new_val) {
+        update(1, 0, n - 1, pos, new_val);
+    }
 };
 
-class MinStack_MaxQueue : DataStructures_Fundamentals {
+class BIT {
+private:
+    vector<int> tree;
+    int n;
+
 public:
-	MinStack_MaxQueue() {}
+    BIT(int size) : n(size + 1) {
+        tree.resize(n, 0);
+    }
 
-	static void stackModify() {
+    void update(int i, int delta) {
+        for (; i < n; i += i & -i)
+            tree[i] += delta;
+    }
 
-	}
+    int query(int i) {
+        int sum = 0;
+        for (; i > 0; i -= i & -i)
+            sum += tree[i];
+        return sum;
+    }
+
+    int rangeQuery(int l, int r) {
+        return query(r) - query(l - 1);
+    }
 };
 
 int main() {
-    MinStack_MaxQueue::stackModify();
+    // Example usage of BIT
+    BIT bit(10);
+    bit.update(1, 5);
+    bit.update(3, 2);
+    cout << bit.rangeQuery(1, 3) << endl; // Output: 7
 }
